@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>온라인수업1교시</title>
+        <style>
+            #mybrowser, #mybrowser td {
+                border: 1px solid black;
+            }
+            .jeju, .jeju td, .jeju th {
+                border: 2px solid blue;
+            }
+            .mygray {
+                background-color: lightgray;
+            }
+            .myprofile{
+                border: 1px solid red;
+                width: 350px;
+            }
+            .myprofile td {
+                text-align: center;
+                border: 1px solid red;
+            }
+            .myw {
+                width: 100px;
+            }
+            .room, .room th, .room td {
+                border: 1px solid gray;
+            }
+            .room {
+                width: 500px;
+            }
+            .b, .b td {
+                border: 1px solid blue;
+            }
+            .gaipform, .gaipform td {
+                border: 1px solid black;
+            }
+            .gaipform {
+                width: 400px;
+            }
+            .gaip2 td {
+                border: 2px solid black;
+            }
+            .gaip2 th {
+                border: 2px solid black;
+                background-color: pink;
+            }
+            .mybtn {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="mybrowser">
+            <caption>
+                <p>Modern Browser</p>
+                <p>국내에서 자주 사용하는 모던 브라우저</p>
+            </caption>
+            <tr>
+                <td>브라우저</td>
+                <td>제조업체</td>
+                <td>다운로드</td>
+            </tr>
+            <tr>
+                <td>크롬(Chrome)</td>  
+                <td>Google</td>
+                <td>http://www.google.com/chrome/</td>
+            </tr>
+            <tr>
+                <td>파이어폭스(Firefox)</td>  
+                <td>Mozila</td>
+                <td>http://www.mozila.org/ko/firefox/</td>
+            </tr>
+            <tr>
+                <td>엣지(Edge)</td>  
+                <td>Microsoft</td>
+                <td>http://www.microsoft.com/ko-kr/windows/microsoft-edge</td>
+            </tr>
+        </table>
+        <br>
+        <table class="jeju">
+            <caption>제주특별자치도 학교현황(2015.4.1 기준)</caption>
+            <tr class="mygray">
+                <th>구분</th><th>학교수</th><th>학급수</th><th>학생수</th><th>교원수</th>
+            </tr>
+            <tr><td>유치원</td><td>117</td><td>252</td><td>5,547</td><td>474</td></tr>
+            <tr><td>초등학교</td><td>111</td><td>1,720</td><td>37,686</td><td>2,632</td></tr>
+            <tr><td>중학교</td><td>44</td><td>699</td><td>21,274</td><td>1,412</td></tr>
+            <tr><td>고등학교</td><td>29</td><td>676</td><td>22,019</td><td>1,433</td></tr>
+            <tr><td>특수학교</td><td>3</td><td>90</td><td>428</td><td>160</td></tr>
+            <tr class="mygray"><th>합계</th><td>300</td><td>3,437</td><td>86,954</td><td>6,111</td></tr>
+        </table>
+        <br>
+        <table class="myprofile">
+            <tr><td>이름</td><td class="myw"></td><td>연락처</td><td class="myw"></td></tr>
+            <tr>
+                <td>주소</td><td colspan="3"></td>
+            </tr>
+            <tr>
+                <td>자기소개</td><td colspan="3"></td>
+            </tr>
+        </table>
+        <br>
+        <table class="room">
+            <caption>고훈준 펜션 객실</caption>
+            <tr class="mygray"><th>방 이름</th><th>대상</th><th>크기</th><th>가격</th></tr>
+            <tr><th>유채방</th><td>여성 도미토리</td>
+                <td rowspan="3">4인실</td><td rowspan="4">1인 20,000원</td>
+            </tr>
+            <tr>
+                <th rowspan="2">동백방</th><td>동성 도미토리</td>
+            </tr>
+            <tr>
+                <td>가족 1팀</td>
+            </tr>
+            <tr><th>천혜향방</th><td>-</td><td>2인실</td></tr>
+            <tr><th colspan="4">바깥채 전체를 렌트합니다.</th></tr>
+        </table>
+        <br>
+        <table class="b">
+            <tr>
+                <td>운영체제의 종류</td><td>브라우저의 종류</td><td>버전</td>
+            </tr>
+            <tr><td rowspan="5">windows</td><td rowspan="2">Explorer</td><td>5.0</td></tr>
+            <tr><td>5.5</td></tr>
+            <tr><td rowspan="3">Netscape</td><td>5.0</td></tr>
+            <tr><td>6.0</td></tr>
+            <tr><td>7.0</td></tr>
+            <tr><td rowspan="5">Linux</td><td rowspan="3">Netscape</td><td>5.0</td></tr>
+            <tr><td>6.0</td></tr>
+            <tr><td>7.0</td></tr>
+            <tr><td>Mozilla</td><td>5.0</td></tr>
+            <tr><td colspan="2">K-browser</td></tr>
+        </table>
+        <br>
+        <form name="gaip" action="process.php" method="post"></form>
+        <table class="gaipform">
+            <caption>회원가입</caption>
+            <tr>
+                <td>이름</td><td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>아이디</td><td><input type="text" name="userid"></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td><td><input type="password" name="mypass1"></td>
+            </tr>
+            <tr>
+                <td>비밀번호확인</td><td><input type="password" name="mypass2"></td>
+            </tr>
+            <tr><td>이메일</td><td><input type="email" name="useremail"></td></tr>
+            <tr><td>취미</td>
+                <td><input type="checkbox" name="c[]" value="reading">독서
+                    <input type="checkbox" name="c[]" value="cooking">요리
+                    <input type="checkbox" name="c[]" value="joging">조깅
+                    <input type="checkbox" name="c[]" value="swimming">수영
+                    <input type="checkbox" name="c[]" value="sleeping">취침
+                </td>
+            </tr>
+            <tr>
+                <td>전공</td>
+                <td><input type="radio" name="major" value="kor">국어
+                <input type="radio" name="major" value="eng">영어
+                <input type="radio" name="major" value="math">수학
+                <input type="radio" name="major" value="design">디자인
+                </td>
+            </tr>
+            <tr>
+                <td>통신사</td>
+                <td>
+                    <select name="mobile">
+                        <option value="skt">SKT</option>
+                        <option value="kt">KT</option>
+                        <option value="lgu">LGU+</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td><input type="submit" value="전송"> &nbsp;<input type="reset" value="초기화"></td></tr>
+            </form>
+        </table>
+        <br>
+        <form name="gaipform2" action="gaip_process.php" method="post">
+        <table class="gaip2">
+            <tr><th>시용자ID</th><td colspan="3"><input type="text" name="userid"><input type="button" value="ID중복확인"></td></tr>
+            <tr><th>비밀번호</th><td><input type="password" name="userpass1"></td>
+                <th>비밀번호확인</th><td><input type="password" name="userpass2"></td></tr>
+            <tr><th>사용자 이름</th><td colspan="3"><input type="text" name="username"></td></tr>
+            <tr><th>주민등록번호</th><td colspan="3"><input type="text" name=jumin01>-<input type="text" name="jumin02"></td></tr>
+            <tr><th>생년월일</th><td><input type="text" name="birth"></td>
+                <th>성별</th><td><input type="radio" name="s" value="man">남자
+                <input type="radio" name="s[]" value="woman">여자</td></tr>
+            <tr><th>우편번호</th><td colspan="3"><input type="text" name="mailnum01">
+                -
+                <input type="text" name="mailnum02"><button>우편번호검색</button>
+            </td></tr>
+            <tr><th>주소</th><td colspan="3"><input type="text" size="60" name="myaddr01"></td></tr>
+            <tr><th>나머지주소</th><td colspan="3"><input type="text" size="60" name="myaddr02"></td></tr>
+            <tr><th>E-Mail</th><td colspan="3"><input type="text" name="email01">@
+            <select name="email02">
+                <option disabled selected>선택하세요.</option>
+                <option value="daum">daum.net</option>
+                <option value="han">hanmail.net</option>
+                <option value="naver">naver.com</option>
+            </select>
+            </td></tr>
+            <tr><th>직업</th><td colspan="3">
+                <select name="myjob">
+                    <option value="com">컴퓨터/정보통신</option>
+                    <option value="free">프리랜서</option>
+                </select>
+            </td></tr>
+            <tr><td colspan="4" class="mybtn"><input type="submit" value="등록"><input type="reset" value="취소"></td></tr>
+        </table>
+    </body>
+</html>
