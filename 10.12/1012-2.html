@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">   
+    <head>
+        <meta charset="utf-8">
+        <title>10월 12일 수업</title>
+        <style>
+            * {
+                font-size: 0;
+                font-family: "맑은 고딕", "Times New Roman"; /*띄어쓰기 때문에 ""로 묶음? / 맑은 고딕이 안 되면 뒤에 폰트로 적용됨*/
+            }
+            .mycolor1 {
+                color: blue;
+                font-size: 20px;
+                text-decoration: line-through;
+            }
+            .mycolor2 {
+                color: rgb(255, 0, 0);
+                font-size: 20px;
+                font-family: 돋움;
+                text-decoration: overline;
+                line-height: 40px;
+            }
+            .mycolor3 {
+                color: rgb(255, 0, 0, 0.5);
+                font-size: 20px;
+                font-weight: bold; 
+                text-align: justify;
+                text-decoration: underline;
+            }
+            .mycolor4 {
+                color: #ff0000;
+                font-size: 20px;
+                font-style: italic;
+                text-align: center;
+            }
+            .mycolor5 {
+                color: #00ff00; /*16진수에서 R,G,B 각각 2자리까지 만들 수있다고 했을 때 총 6자리. 00ff00=0f0으로 줄일 수 있음.*/
+                font-size: 20px;
+                font-variant: small-caps;
+                text-align: right;
+            }
+            .mycolor6 a {
+                font-size: 25px;
+                text-decoration: none; /*안 하면 밑줄 생김?*/
+                letter-spacing: 10px;
+            }
+            .mydiv {
+                width: 300px;
+                height: 60px;
+                background-color: pink;
+                font-size: 20px;
+                line-height: 60px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="mycolor1">색상테스트입니다.</p>
+        <p class="mycolor2">색상테스트입니다.</p>
+        <p class="mycolor3">색상테스트입니다.</p>
+        <p class="mycolor4">색상테스트입니다.</p>
+        <p class="mycolor5">색상테스트입니다. Lorem ipsum dolor sit</p>
+        <p class="mycolor6"><a href="www.naver.com">네이버</a></p>
+        <div class="mydiv">
+            텍스트 높이조절
+        </div>
+    </body>
+</html>
+
+/*10진수란, 10개의 기호로 수학 체제를 만든 것*/
+/*10진수: 1,2,3,4,5,6,7,8,9/10,11,12,13,14...*/
+/*2진수: 0,1/10,11,100,101,110,110,111,1000...*/
+/*8진수: 0,1,2,3,4,5,6,7/10,11,12,13,14,15,16,17,20...*/
+/*16진수: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F/10,11,12,13,14,15,16,17,18,19,1A...*/
